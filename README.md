@@ -1,10 +1,10 @@
-# 데이터플랫폼 사전과제
+# 카프카 클론코딩
 
 - Java 11
 - Maven 3.6.3
 
 ## 1. Getting Started
-프로젝트의 words.TXT 를 읽어서, 5개 파티션을 이용하여 result 에 적재하는 명령
+프로젝트의 words.TXT 를 읽어서, 5개 파티션을 이용하여 result 에 적재
 ```cmd
 ./mvnw compile
 
@@ -18,7 +18,7 @@ mkdir result
 결과 초기화
 ```cmd
 ./mvnw clean
-rm -rf kakaoWords.log result
+rm -rf words.log result
 ```
 
 ---
@@ -27,7 +27,7 @@ rm -rf kakaoWords.log result
 
 ![word_hexagonal](./doc/word_hexagonal.png)
 
-- Hexagonal 구조를 지향하며 과제를 작성함
+- Hexagonal 구조 지향
 
 ### 2.1. 헥사고날 아키텍처 채택 이유
 - Consumer 와 Producer 가 각각 분리될 것을 가정했을 때 헥사고날 아키텍처가 가장 적합하다고 생각했기 때문
